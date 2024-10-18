@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // dockerapp = docker.build("fabricioveronez/api-produto:${env.BUILD_ID}", '-f ./src/Dockerfile ./src') 
-                    dockerapp = docker.buid("bzanf/api-produto", "-f ./src/Dockerfile ./src")
+                    dockerapp = docker.build("bzanf/api-produto", "-f ./src/Dockerfile ./src")
                 }                
             }
         }
